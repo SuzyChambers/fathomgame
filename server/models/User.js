@@ -1,6 +1,6 @@
 const { Schema, model } = require("mongoose");
 const bcrypt = require("bcrypt");
-
+//Schema for user!
 const userSchema = new Schema({
   username: {
     type: String,
@@ -19,6 +19,7 @@ const userSchema = new Schema({
     required: true,
     minlength: 5,
   },
+  //Scores as number type
   scores: [
     {
       type: Number,
