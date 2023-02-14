@@ -2,8 +2,8 @@ import React from "react";
 import { useQuery } from "@apollo/client";
 
 const Home = () => {
-  const { loading, data } = useQuery(QUERY_SCORES);
-  const scores = data?.scores || [];
+  //const { loading, data } = useQuery(QUERY_SCORES);
+  const scores = []?.scores || [];
   return (
     <main>
       <div className="flex-row justify-center">
@@ -13,12 +13,13 @@ const Home = () => {
         >
           <ThoughtForm />
         </div> */}
+        
         <div className="col-12 col-md-8 mb-3">
-          {loading ? (
+          {/* {loading ? (
             <div>Loading...</div>
           ) : (
             <ScoresList scores={scores} title="Scores" />
-          )}
+          )} */}
         </div>
       </div>
     </main>
